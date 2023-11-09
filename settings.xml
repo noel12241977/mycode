@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+	<servers>
+		<server>
+			<id>anypoint-exchange</id>
+			<username>~~~Client~~~</username>
+			<password>ae9bc3a7b70e4f8e958ce7265c9705d7~?~bCe1BD22ED774Cefb063350Cb38F35f6</password>
+		</server>
+		<server>
+			<id>MuleRepository</id>
+			<username>axa.france.nexus</username>
+			<password>SqlSccQb</password>
+		</server>
+		<server>
+                        <id>common-domain</id>
+                        <username>axa-ph</username>
+                        <password>3eovnybd4f4jpoy3ijbxrruprfzyrqns766xaoftmpwm2kma5izq</password>
+                </server>
+	</servers>
+	<profiles>
+		<profile>
+			<id>Mule</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<!-- <repository>
+					<id>mulesoft-public</id>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+				</repository> -->
+				<repository>
+					<id>MuleRepository</id>
+					<name>MuleRepository</name>
+					<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<!-- <repository>
+					<id>jfrogRepository</id>
+					<url>https://hobbyim.jfrog.io/ui/native/generic-local/</url>
+				<snapshots>
+								<enabled>false</enabled>
+						</snapshots>
+				</repository> -->
+			</repositories>
+			<pluginRepositories>
+				<!-- <pluginRepository>
+					<id>mulesoft-public</id>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+				</pluginRepository> -->
+				<pluginRepository>
+					<id>MuleRepository</id>
+					<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+	<pluginGroups>
+		<pluginGroup>org.mule.tools</pluginGroup>
+	</pluginGroups>
+</settings>
